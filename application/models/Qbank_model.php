@@ -620,7 +620,7 @@ Class Qbank_model extends CI_Model
 
  
  
- 
+ // xlx import issue
  
  function import_question($question){
 //echo "<pre>"; print_r($question);exit;
