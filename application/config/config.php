@@ -20,7 +20,7 @@ $config['base_url'] = $sq_base_url;
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -362,7 +362,7 @@ $config['encryption_key'] = 'savsoftquiz';
 $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = NULL;
+$config['sess_save_path'] = '/tmp';
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
@@ -622,7 +622,7 @@ $config['smtp_password'] = $csetting['SMTP_password'];
 // smtp outgoing port. eg for gmail its 465, outlook 587, yahoo 465 for other contact your mailing administrator
 $config['smtp_port'] = $csetting['SMTP_port'];
 // smtp timeout default 5 seconds
-$config['smtp_timeout'] = "5";
+$config['smtp_timeout'] = "10";
 // smtp tls
 $config['starttls'] = TRUE;
 // new line
@@ -661,7 +661,7 @@ $config['result_subject'] = $csetting['Result_email_subject'];
 // email send from
 $config['fromemail']=$csetting['SMTP_username'];
 // from name
-$config['fromname']="Administrator - Quiz Portal";
+$config['fromname']="Administrator - FreeMock";
 
 
 
@@ -752,7 +752,7 @@ $config['firebase_topic']="SavsoftQuiz";
 
 
 $config['quiz_templates']=array('Default','Practice');
-$config['question_lang']=array('English');
+$config['question_lang']=array('English','Hindi');
 
 $config['master_password']=$csetting['Master_password'];
  
